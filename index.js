@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv").config();
-const URL = "process.env.DB";
+const URL = process.env.DB;
 
 const DB_NAME = "movie_db";
 
